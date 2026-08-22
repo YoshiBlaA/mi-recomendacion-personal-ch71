@@ -1,11 +1,753 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Página Web</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 </head>
+
 <body>
-    
+
+    <!-- * NAVBAR DE BOOTSTRAP -->
+    <nav class="navbar bg-dark border-bottom border-body main-navbar sticky-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ! FIN NAVBAR DE BOOTSTRAP -->
+
+    <div class="content-body">
+
+        <!-- * INICIO CONTENEDOR DE NAVBAR-->
+        <aside class="nav-related bd-sidebar border-start">
+
+            <!-- * INICIO  NAVBAR-->
+            <div class="nav-container">
+                <nav id=" navbar-example3" class="h-100 flex-column align-items-stretch pe-4 -end">
+                    <nav class="nav nav-pills flex-column">
+                        <h4>En esta página</h4>
+                        <hr class="divider">
+                        <a class="nav-link" href="#panic-at-the-disco">Panic! At The Disco</a>
+                        <a class="nav-link" href="#fall-out-boy">Fall Out Boy</a>
+                        <a class="nav-link" href="#queen">Queen</a>
+                        <a class="nav-link" href="#square-enix">SQUARE ENIX MUSIC</a>
+                        <a class="nav-link" href="#hoyo-mix">HOYO-MiX</a>
+                    </nav>
+                </nav>
+            </div>
+            <!-- ! FIN  NAVBAR-->
+        </aside>
+        <!-- ! FIN CONTENEDOR DE NAVBAR-->
+
+
+        <main>
+
+            <!-- * CONTENEDOR PRINCIPAL > No se le agrega ninguna otra clase mas que un margen por arriba-->
+            <div id="main-container" class="improvised-container">
+
+                <div class="row">
+
+                    <!-- * INICIO COLUMNA ARTISTAS-->
+                    <div class="col-12">
+
+                        <!-- * ARTISTA - PATD -->
+                        <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                            class="scrollspy-example-2" tabindex="0">
+                            <div id="panic-at-the-disco" class="mb-5">
+
+                                <!-- * INFORMACION DE ARTISTA-->
+                                <div class="composer-info mb-3">
+                                    <h2 class="info-artist-name">Panic! At The Disco</h2>
+                                    <strong>Panic! At The Disco</strong> fue un influyente proyecto estadounidense de
+                                    pop
+                                    rock y
+                                    rock
+                                    alternativo fundado en Las Vegas en 2004. Reconocida por su constante reinvención
+                                    sonora
+                                    y
+                                    su
+                                    estética teatral, la agrupación alcanzó el éxito mundial con su álbum debut de 2005,
+                                    <em>A
+                                        Fever
+                                        You
+                                        Can't Sweat Out</em>, y su icónico sencillo "I Write Sins Not Tragedies". Tras
+                                    varias
+                                    transiciones en su alineación original, el grupo se convirtió en el proyecto solista
+                                    del
+                                    vocalista
+                                    <strong>Brendon Urie</strong> desde 2015 hasta su disolución definitiva en 2023.
+                                </div>
+                                <!-- ! FIN DE INFORMACION DE ARTISTA-->
+
+                                <!-- * MUSICA DEL ARTISTA -->
+                                <div class="row row-cols-1 row-cols-md-4 g-3 composer-music">
+
+                                    <!-- * TARJETAS DE MUSICA DEL ARTISTA -->
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a href="#"> <img src="img/patd/V&V.jpg" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Let’s Kill Tonight</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> Vices & Virtues</p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 29 de agosto de 2011</p>
+                                                    <p><strong>Duración:</strong> 3 minutos y 33 segundos</p>
+
+
+
+                                                </div>
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/14uvyd51Ha7FihKHlOtUig?si=c9b1fc9212b24c18"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a href="#"> <img src="img/patd/DOAB.jpg" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Emperor's New Clothes</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> Death of a Bachelor</p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 21 de octubre de 2015</p>
+                                                    <p><strong>Duración:</strong> 2 minutos y 38 segundos</p>
+
+
+                                                </div>
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/3px2rAPu74ltbkf9eZsZ8h?si=fca10fff125d4bee"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a href="#"> 
+                                                <img src="img/patd/PFTW.png" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">King of the Clouds</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> Pray for the Wicked</p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 18 de junio de 2018</p>
+                                                    <p><strong>Duración:</strong> 2 minutos y 40 segundos</p>
+
+
+                                                </div>
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/50Hv5NZIM0puIUoBttjpfb?si=0d64fa0f0ea9460d"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a href="#"> <img src="img/patd/TWTLTRTD.jpg" class="card-img-top"
+                                                    alt="..."> </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">This Is Gospel</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> Too Weird to Live</p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 12 de agosto de 2013</p>
+                                                    <p><strong>Duración:</strong> 3 minutos y 7 segundos</p>
+
+
+                                                </div>
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/3yZQk5PC52CCmT4ZaTIKvv?si=69f1c7723fbc4229"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ! FIN TARJETAS DE MUSICA DEL ARTISTA -->
+                                </div>
+                                <!-- ! FIN MUSICA DEL ARTISTA -->
+                            </div>
+                            <!-- ! FIN ARTISTA - PATD -->
+
+
+                            <!-- * ARTISTA - FOB -->
+                            <div id="fall-out-boy" class="mb-5">
+                                <!-- * INFORMACION DE ARTISTA-->
+                                <div class="composer-info mb-3">
+                                    <h2 class="info-artist-name">Fall Out Boy</h2>
+                                    <strong>Fall Out Boy</strong> es una icónica banda estadounidense de pop-punk y rock
+                                    alternativo
+                                    formada en Illinois en 2001. Liderada por Patrick Stump y Pete Wentz, se convirtió
+                                    en un
+                                    pilar
+                                    de la
+                                    cultura emo de los 2000 con éxitos masivos como "Sugar, We're Goin Down". Tras un
+                                    breve
+                                    receso,
+                                    regresaron con éxito adaptando su sonido al pop-rock de estadios actual.
+                                </div>
+                                <!-- ! FIN DE INFORMACION DE ARTISTA-->
+
+                                <!-- * MUSICA DEL ARTISTA -->
+                                <div class="row row-cols-1 row-cols-md-4 g-3 composer-music">
+                                    <!-- * TARJETAS DE MUSICA DEL ARTISTA -->
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a href="#"> <img src="img/fob/FAD.jpg" class="card-img-top" alt="..."> </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">I Don't Care</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> Folie à Deux</p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 10 de diciembre de 2008
+                                                    </p>
+                                                    <p><strong>Duración:</strong> 3 minutos y 40 segundos</p>
+
+
+                                                </div>
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/5gbnsMZKQE3W0B80qJ9kJY?si=e3224ba5982d480a"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a href="#"> <img src="img/fob/ABAP.jpg" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Twin Skeleton's (Hotel in NYC)</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> American Beauty/American Psycho</p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 16 de enero de 2015</p>
+                                                    <p><strong>Duración:</strong> 3 minutos y 40 segundos</p>
+
+
+                                                </div>
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/2WWP0IPX9xFjAMraNHX390?si=a5311b73ae384747"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a href="#"> <img src="img/fob/M.jpg" class="card-img-top" alt="..."> </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Young and Menace</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> M A N I A</p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 27 de abril de 2017</p>
+                                                    <p><strong>Duración:</strong> 3 minutos y 44 segundos</p>
+
+
+                                                </div>
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/6XEPmHllDGDaO4w84Xjtgi?si=f505db80a59741dc"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a href="#"> <img src="img/fob/SRAR.jpg" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Where Did the Party Go</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> Save Rock and Roll </p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 12 de abril de 2013</p>
+                                                    <p><strong>Duración:</strong> 4 minutos y 3 segundos</p>
+
+
+                                                </div>
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/66324Jt0mZdXaM7f8uUitE?si=b62f62eabd8d493c"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ! FIN TARJETAS DE MUSICA DEL ARTISTA -->
+                                </div>
+                                <!-- ! FIN MUSICA DEL ARTISTA -->
+                            </div>
+                            <!-- ! FIN ARTISTA - FOB -->
+
+
+                            <!-- * ARTISTA - QUEEN -->
+                            <div id="queen" class="mb-5">
+                                <!-- * INFORMACION DE ARTISTA-->
+                                <div class="composer-info mb-3">
+                                    <h2 class="info-artist-name">Queen</h2>
+                                    <p><strong>Queen</strong> es una legendaria banda británica de rock formada en
+                                        Londres
+                                        en
+                                        1970.
+                                        Integrada por <em>Freddie Mercury</em>, <em>Brian May</em>, <em>Roger
+                                            Taylor</em> y
+                                        <em>John
+                                            Deacon</em>, la agrupación se convirtió en un titán de la música global
+                                        gracias
+                                        a su
+                                        estilo
+                                        ecléctico que fusionó rock, ópera y pop, dejando himnos atemporales como
+                                        <strong>"Bohemian
+                                            Rhapsody"</strong> y <strong>"We Will Rock You"</strong>.
+                                    </p>
+
+                                </div>
+                                <!-- ! FIN DE INFORMACION DE ARTISTA-->
+
+                                <!-- * MUSICA DEL ARTISTA -->
+                                <div class="row row-cols-1 row-cols-md-4 g-3 composer-music">
+                                    <!-- * TARJETAS DE MUSICA DEL ARTISTA -->
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a href="#"> <img src="img/queen/Innuendo.jpg" class="card-img-top"
+                                                    alt="..."> </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">The Show Must Go On</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> Innuendo </p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 14 de octubre de 1991</p>
+                                                    <p><strong>Duración:</strong> 4 minutos y 31 segundos</p>
+
+
+                                                </div>
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/4GHk8YtewHGbk6HsVJ0mcT?si=210ceecc6d01408a"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a href="#"> <img src="img/queen/NOTW.jpg" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">We Are the Champions</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> News of the World</p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 7 de octubre de 1977</p>
+                                                    <p><strong>Duración:</strong> 2 minutos y 59 segundos</p>
+
+
+                                                </div>
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/0saBeiGcu2dECTvAknHPzL?si=545df72ebae44924"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a href="#"> <img src="img/queen/TW.jpg" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Radio Ga Ga</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> The Works</p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 23 de enero de 1984</p>
+                                                    <p><strong>Duración:</strong> 5 minutos y 44 segundos</p>
+
+
+                                                </div>
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/6N717o83wbmahFGUqkjQj7?si=74a2e5bb2cb747fd"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a href="#"> <img src="img/queen/TG.jpg" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Another One Bites the Dust</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> The Game</p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 12 de agosto de 1980</p>
+                                                    <p><strong>Duración:</strong> 3 minutos con 36 segundos</p>
+
+
+                                                </div>
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/1KPuohcXPmJYQfdyg9zKmR?si=2548934429614c07"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ! FIN TARJETAS DE MUSICA DEL ARTISTA -->
+                                </div>
+                                <!-- ! FIN MUSICA DEL ARTISTA -->
+                            </div>
+                            <!-- ! FIN ARTISTA - QUEEN -->
+
+
+                            <!-- * ARTISTA - SQUARE ENIX MUSIC -->
+                            <div id="square-enix" class="mb-5">
+                                <!-- * INFORMACION DE ARTISTA-->
+                                <div class="composer-info mb-3">
+                                    <h2 class="info-artist-name">SQUARE ENIX MUSIC</h2>
+                                    <p><strong>Square Enix Music</strong> es el sello discográfico oficial de la
+                                        desarrolladora
+                                        de
+                                        videojuegos japonesa Square Enix, dedicado a la producción, edición y
+                                        distribución
+                                        de
+                                        bandas
+                                        sonoras. Es mundialmente reconocido por albergar composiciones legendarias de
+                                        franquicias
+                                        como
+                                        <em>Final Fantasy</em>, <em>Kingdom Hearts</em> y <em>NieR</em>, creadas por
+                                        maestros de
+                                        la
+                                        industria como Nobuo Uematsu y Yoko Shimomura.
+                                    </p>
+                                </div>
+                                <!-- ! FIN DE INFORMACION DE ARTISTA-->
+
+                                <!-- * MUSICA DEL ARTISTA -->
+                                <div class="row row-cols-1 row-cols-md-4 g-3 composer-music">
+                                    <!-- * TARJETAS DE MUSICA DEL ARTISTA -->
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a href="#"> <img src="img/square-enix/DFFOS.jpg" class="card-img-top"
+                                                    alt="..."> </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Battle - arrange - from FINAL FANTASY I</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> DISSIDIA FINAL FANTASY Original
+                                                        Soundtrack
+                                                    </p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 24 de diciembre de 2008
+                                                    </p>
+                                                    <p><strong>Duración:</strong> 3 minutos con 33 segundos</p>
+
+
+                                                </div>
+
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/6r50rXHbo9VpGOu32ucVO8?si=1084db0dd98644c2"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a href="#"> <img src="img/square-enix/NG&NR.jpg" class="card-img-top"
+                                                    alt="..."> </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Cold Steel Coffin</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> NieR Gestalt & NieR Replicant Original
+                                                        Soundtrack
+                                                    </p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 21 de abril de 2010</p>
+                                                    <p><strong>Duración:</strong> 3 minutos y 36 segundos</p>
+
+
+                                                </div>
+
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/0GUo4gPaik5xraYNrhZ9PL?si=208fb34b7a814b15"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a href="#"> <img src="img/square-enix/SBFF.jpg" class="card-img-top"
+                                                    alt="..."> </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Wayward Daughter</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> Stormblood: FINAL FANTASY XIV Original
+                                                        Soundtrack
+                                                    </p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 4 de julio de 2018 </p>
+                                                    <p><strong>Duración:</strong> 5 minutos y 38 segundos</p>
+
+
+                                                </div>
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/6XFeoBnO3gz1QHV9yUQdR0?si=78260f590ea44e61"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a href="#"> <img src="img/square-enix/FFX.jpg" class="card-img-top"
+                                                    alt="..."> </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Battle Theme</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> FINAL FANTASY X Original Soundtrack</p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 1 de agosto de 2001</p>
+                                                    <p><strong>Duración:</strong> 3 minutos y 22 segundos</p>
+
+
+                                                </div>
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/5TU2tVnNNCllx1hbXjmJ0B?si=7a04df19349f4afe"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ! FIN TARJETAS DE MUSICA DEL ARTISTA -->
+                                </div>
+                                <!-- ! FIN MUSICA DEL ARTISTA -->
+                            </div>
+                            <!-- ! FIN ARTISTA - SQUARE ENIX MUSIC -->
+
+
+                            <!-- * ARTISTA - HOYO-MiX -->
+                            <div id="hoyo-mix" class="mb-5">
+                                <!-- * INFORMACION DE ARTISTA-->
+                                <div class="composer-info mb-3">
+                                    <h2 class="info-artist-name">HOYO-MiX</h2>
+                                    <p><strong>HOYO-MiX</strong> es el equipo de producción musical interno de la
+                                        desarrolladora
+                                        global
+                                        de videojuegos miHoYo. El sello es ampliamente aclamado por crear las ricas y
+                                        envolventes
+                                        bandas
+                                        sonoras de títulos masivos como <em>Genshin Impact</em>, <em>Honkai: Star
+                                            Rail</em>
+                                        y
+                                        <em>Honkai
+                                            Impact 3rd</em>, destacando por fusionar de manera maestra instrumentos
+                                        tradicionales de
+                                        diversas culturas con música orquestal y elementos electrónicos modernos.
+                                    </p>
+                                </div>
+                                <!-- ! FIN DE INFORMACION DE ARTISTA-->
+
+                                <!-- * MUSICA DEL ARTISTA -->
+                                <div class="row row-cols-1 row-cols-md-4 g-3 composer-music">
+                                    <!-- * TARJETAS DE MUSICA DEL ARTISTA -->
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a href="#"> <img src="img/hoyo_mix/GI_IFTLF.jpg" class="card-img-top"
+                                                    alt="..."> </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Combat Beneath the Waves</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> Genshin Impact - Islands of the Lost and
+                                                        Forgotten
+                                                        (Original Game Soundtrack)</p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 13 de abril de 2022</p>
+                                                    <p><strong>Duración:</strong> 4 minutos y 6 segundos</p>
+
+
+                                                </div>
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/78MorS8NRGXYSLbBrIjtY8?si=c0a1e1786c534221"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a href="#"> <img src="img/hoyo_mix/GU_TSV.jpg" class="card-img-top"
+                                                    alt="..."> </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Wrath of Monoceros Caeli</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> Genshin Impact - The Shimmering Voyage
+                                                        (Original
+                                                        Game
+                                                        Soundtrack)</p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 19 de julio de 2021</p>
+                                                    <p><strong>Duración:</strong> 2 minutos y 44 segundos</p>
+
+
+                                                </div>
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/2xZ8J2WykVzYstEhOOMpNQ?si=5c8a044b052840f5"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a href="#"> <img src="img/hoyo_mix/GI_JMUASOC.jpg" class="card-img-top"
+                                                    alt="..."> </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Gallant Challenge</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> Genshin Impact - Jade Moon Upon a Sea of
+                                                        Clouds
+                                                        (Original
+                                                        Game Soundtrack) </p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 6 de noviembre de 2020</p>
+                                                    <p><strong>Duración:</strong> 3 minutos con 42 segundos</p>
+
+
+                                                </div>
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/4Pybod1toaD5z0s4XxS4Ff?si=05ee8ea326874520"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <a data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                                                aria-controls="staticBackdrop" href="#"> <img
+                                                    src="img/hoyo_mix/GI_MW.jpg" class="card-img-top" alt="..."> </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Inevitable Conflict</h5>
+                                                <div class="card-text">
+                                                    <p><strong>Álbum:</strong> Genshin Impact - Millelith's Watch
+                                                        (Original
+                                                        Game
+                                                        Soundtrack) </p>
+                                                    <p><strong>Fecha de lanzamiento:</strong> 22 de junio de 2022</p>
+                                                    <p><strong>Duración:</strong> 4 minutos y 6 segundos</p>
+
+
+                                                </div>
+                                                <a type="button" class="btn btn-success"
+                                                    href="https://open.spotify.com/intl-es/track/6mtLr20txasc9z9TnGBCao?si=e5a1dc5eac1241ca"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                                                    </svg>Escuchar en Spotify</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ! FIN TARJETAS DE MUSICA DEL ARTISTA -->
+                                </div>
+                                <!-- ! FIN MUSICA DEL ARTISTA -->
+                            </div>
+                            <!-- ! FIN ARTISTA - HOYO-MiX -->
+
+                        </div>
+                    </div>
+                    <!-- ! FIN COLUMNA ARTISTAS-->
+
+                </div>
+                <!-- ! FIN FILA-->
+
+            </div>
+            <!-- ! FIN CONTENEDOR PRINCIPAL-->
+
+        </main>
+    </div>
+
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      I will not close if you click outside of me.
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,234 @@
+
+
+
+
+
+
+
+
+/* 
+    Aqui preferí no usar el grid de bootstrap, ya que se me hizo más cómodo trabajar con un grid personalizado directamente.
+    - Básicamente divide la pantalla en dos columnasm
+        - una para el nav de los índices a la izquierda.
+        - y otra para el contenido que se muestra a la derecha.
+*/
+.content-body {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    margin: 0% 8% 0 10% !important;
+}
+
+/* 
+    Opte por usar un color de fondo para el espacio sobrante en el main de un color blanco con opacidad.
+*/
+main {
+    background-color: rgba(245, 245, 245, 0.747);
+}
+
+/* 
+    Contenedor improvisado que engloba toda la etiqueta main. Sé que esto no debería hacerse, pero en el momento no se me ocurría otra forma de separar el nav principal del contenido en main (ya que no me funcionaba el sticky del nav de índices).
+    - Planeo arreglarlo en un futuro (o tal vez no y se lo pida a la IA).
+*/
+.improvised-container {
+    padding: 20px;
+}
+
+/* Barra lateral con el indice del contenido
+    - Sticky para que se mantenga visible a pesar del desplazamiento por el contenido.
+    - Usé 100vh en la altura para que siempre ocupe todo el alto de la pantalla del usuario (viewport).
+        Esto hace que aunque haga zoom en el caso de las computadoras, la altura de esta nav siempre ocupa todo el alto disponible en ese momento.
+    - Usé una función max, ya que al hacer zoom en computadora, parte del contenido del nav se escondía debajo del otro nav principal, con esta función me aseguro de que eso ya no suceda.
+    - Uso overflow por si en algún momento a la página se le añade más contenido (e índices por consecuencia), salga una barra de desplazamiento aparte para este nav.
+        */
+.bd-sidebar {
+    position: sticky;
+    top: max(5%, 40px);
+    overflow-y: auto;
+    height: 100vh;
+    padding-top: 15px;
+}
+
+/* 
+    Uso de selector de hijos, lo uso para seleccionar todo el contenedor de cada artista mostrado y poner un márgen de 15px para que tengan un espaciado entre cada uno, pues no se veía bien sin espaciado de margen.
+*/
+/* #main-container>div {
+    margin-bottom: 85px !important;
+} */
+
+/* 
+    Lo aplico al nav de índices, ya que el que tenía por defecto no me gustó al ocupar espacio de manera "ineficiente", por lo que opto por quitar el padding, de forma que el texto ya no tiene saltos de línea innecesarios.
+*/
+.nav-container>nav {
+    padding: 0 !important;
+}
+
+/* Al quitar el padding en la instrucción anterior, el texto se "desacomoda", por lo que pruebo manualmente distientas configuraciones SOLO para los enlaces, ya no para su contenedor nav
+    - Opto por usar 5px de padding arriba / abajo, ya que el que tenian por defecto hacía que tuvieran mucho espacio vertical.
+    - También uso 10px de padding izquierda / derecha.
+*/
+.nav-pills a,
+.nav-pills h4 {
+    padding: 5px 10px !important;
+    border-radius: 0 !important;
+}
+
+.nav-pills a:first-of-type{
+    border-radius: 7px 7px  0  0 !important;
+}
+
+/*
+    Esta linea solo sirve para separar un poco mas con margen hacia abajo el contenedor de los índices del nav del texto "En esta página"
+*/
+hr {
+    margin: 0px 0 10px !important;
+}
+
+/* .composer-music a {
+    width: fit-content;
+
+    display: flex !important;
+    gap: 5px;
+    align-items: center;
+} */
+
+.composer-music .card-body a {
+    margin-top: auto;
+}
+
+.composer-music .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.composer-music img:hover{
+    opacity: 0.5;
+    
+}
+
+.composer-music img{
+    transition:
+        opacity 0.4s ease,
+        filter 0.4s ease,
+        color 0.4s ease;
+}
+
+
+
+/*
+    ========================== INTERACCIONES -------------------------------------
+*/
+
+.composer-music .card-body a:hover {
+    background-color: whitesmoke;
+    color: green;
+}
+
+#panic-at-the-disco .card-body {
+    transition:
+        background-color 0.4s ease,
+        filter 0.4s ease,
+        color 0.4s ease;
+}
+
+#panic-at-the-disco .card-body:hover,
+#panic-at-the-disco .composer-music a:hover + .card-body{
+    background-color: rgba(18, 20, 24, 0.815);
+    color: whitesmoke;
+}
+
+#fall-out-boy .card-body {
+    transition:
+        background-color 0.4s ease,
+        filter 0.4s ease,
+        color 0.4s ease;
+}
+
+#fall-out-boy .card-body:hover,
+#fall-out-boy .composer-music a:hover + .card-body{
+    background-color: rgb(77, 18, 0);
+    color: whitesmoke;
+}
+
+
+#queen .card-body {
+    transition:
+        background-color 0.4s ease,
+        filter 0.4s ease,
+        color 0.4s ease;
+}
+
+#queen .card-body:hover,
+#queen .composer-music a:hover + .card-body{
+    background-color: rgb(0, 77, 71);
+    color: whitesmoke;
+}
+
+
+#square-enix .card-body {
+    transition:
+        background-color 0.4s ease,
+        filter 0.4s ease,
+        color 0.4s ease;
+}
+
+#square-enix .card-body:hover,
+#square-enix .composer-music a:hover + .card-body{
+    background-color: rgb(81, 83, 99);
+    color: whitesmoke;
+}
+
+
+#hoyo-mix .card-body {
+    transition:
+        background-color 0.4s ease,
+        filter 0.4s ease,
+        color 0.4s ease;
+}
+
+#hoyo-mix .card-body:hover,
+    #hoyo-mix .composer-music a:hover + .card-body{
+    background-color: rgb(44, 72, 148);
+    color: whitesmoke;
+}
+
+
+/*
+    ------------------------------- MAS INTERACCIONES-------------------------------
+*/
+
+.card-body::selection {
+  background-color: whitesmoke; /* Vibrant background */
+  color: black; /* White text */
+}
+
+
+
+/* -------------------------- MEDIA QUERIES -------------------------------- */
+
+/*
+    Cuando la pantalla o zoom de pc del usuario sea menor a 1050 píxeles, se esconderá el nav de índices, de forma que solo quede el contenido de artistas.
+    - Se esconde el nav usando un display: none.
+    - Se reasigna el grid para que el contenido pase de ocupar el 85% al 100% del contenedor, aprovechando todo el espacio restante que dejó el nav de índices.
+*/
+@media (max-width: 1050px) {
+    .bd-sidebar {
+        display: none;
+    }
+
+    .content-body {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+
+/* 
+.composer-music .card-img-overlay{
+    display: none;
+}
+#panic-at-the-disco .composer-music:hover img + div{
+    display: block;
+    color: whitesmoke;
+} */
