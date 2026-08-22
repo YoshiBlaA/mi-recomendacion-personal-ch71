@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 /* 
     Aqui preferí no usar el grid de bootstrap, ya que se me hizo más cómodo trabajar con un grid personalizado directamente.
     - Básicamente divide la pantalla en dos columnasm
@@ -28,6 +20,7 @@ main {
 /* 
     Contenedor improvisado que engloba toda la etiqueta main. Sé que esto no debería hacerse, pero en el momento no se me ocurría otra forma de separar el nav principal del contenido en main (ya que no me funcionaba el sticky del nav de índices).
     - Planeo arreglarlo en un futuro (o tal vez no y se lo pida a la IA).
+    * - ACTUALIZACION> Se arreglo, cambiando div por man y main por div
 */
 .improvised-container {
     padding: 20px;
@@ -49,13 +42,6 @@ main {
 }
 
 /* 
-    Uso de selector de hijos, lo uso para seleccionar todo el contenedor de cada artista mostrado y poner un márgen de 15px para que tengan un espaciado entre cada uno, pues no se veía bien sin espaciado de margen.
-*/
-/* #main-container>div {
-    margin-bottom: 85px !important;
-} */
-
-/* 
     Lo aplico al nav de índices, ya que el que tenía por defecto no me gustó al ocupar espacio de manera "ineficiente", por lo que opto por quitar el padding, de forma que el texto ya no tiene saltos de línea innecesarios.
 */
 .nav-container>nav {
@@ -72,10 +58,6 @@ main {
     border-radius: 0 !important;
 }
 
-.nav-pills a:first-of-type{
-    border-radius: 7px 7px  0  0 !important;
-}
-
 /*
     Esta linea solo sirve para separar un poco mas con margen hacia abajo el contenedor de los índices del nav del texto "En esta página"
 */
@@ -83,13 +65,16 @@ hr {
     margin: 0px 0 10px !important;
 }
 
-/* .composer-music a {
+/*
+    Afecta solo a los botones para Spotify, lo usé para dar espaciado entre los elementos svg y el texto, además de centrarlos verticalmente con align-items
+*/
+.composer-music .card-text + a {
     width: fit-content;
 
     display: flex !important;
     gap: 5px;
     align-items: center;
-} */
+}
 
 .composer-music .card-body a {
     margin-top: auto;
@@ -101,10 +86,9 @@ hr {
     justify-content: space-between;
 }
 
-
 .composer-music img:hover{
     opacity: 0.5;
-    
+    cursor: pointer;    
 }
 
 .composer-music img{
@@ -114,17 +98,29 @@ hr {
         color 0.4s ease;
 }
 
-
+#staticBackdrop-patd-
+#staticBackdrop-fob-
+#staticBackdrop-queen-
+#staticBackdrop-square-enix-
+#staticBackdrop-hoyo-mix-
 
 /*
-    ========================== INTERACCIONES -------------------------------------
+    * -------------------------- INTERACCIONES USANDO PSEUDOCLASSES -------------------
 */
 
+/*
+    Cambiar el color del botón de Spotify cuando el cursor está encima
+*/
 .composer-music .card-body a:hover {
     background-color: whitesmoke;
     color: green;
 }
 
+/*
+    TODO> Interaccion con la carta de musica para cada compositor
+    TODO> 1. #[compositor] .card-body --> transicion de color para cambiar al siguiente color.
+    TODO> 2. #[compositor] .card-body:hover, #[compositor] .composer-music a:hover + .card-body --> cambia el fondo del contenedor de texto de la tarjeta y hace el texto color blancoso.
+*/
 #panic-at-the-disco .card-body {
     transition:
         background-color 0.4s ease,
@@ -151,7 +147,6 @@ hr {
     color: whitesmoke;
 }
 
-
 #queen .card-body {
     transition:
         background-color 0.4s ease,
@@ -164,7 +159,6 @@ hr {
     background-color: rgb(0, 77, 71);
     color: whitesmoke;
 }
-
 
 #square-enix .card-body {
     transition:
@@ -179,7 +173,6 @@ hr {
     color: whitesmoke;
 }
 
-
 #hoyo-mix .card-body {
     transition:
         background-color 0.4s ease,
@@ -193,11 +186,15 @@ hr {
     color: whitesmoke;
 }
 
+/* TODO> FIN DE AGRUPACION */
+
+
+
+/* * --------------------- MAS INTERACCIONES USANDO PSEUDOELEMENTOS ------------------ */
 
 /*
-    ------------------------------- MAS INTERACCIONES-------------------------------
+    Al seleccionar texto de la informacion de una cancion del artista, el texto se vuelve negro y el color de fondo de la seleccion se vuelve blancoso. 
 */
-
 .card-body::selection {
   background-color: whitesmoke; /* Vibrant background */
   color: black; /* White text */
@@ -205,7 +202,7 @@ hr {
 
 
 
-/* -------------------------- MEDIA QUERIES -------------------------------- */
+/* * -------------------------- MEDIA QUERIES -------------------------------- */
 
 /*
     Cuando la pantalla o zoom de pc del usuario sea menor a 1050 píxeles, se esconderá el nav de índices, de forma que solo quede el contenido de artistas.
@@ -224,11 +221,79 @@ hr {
 }
 
 
+
+/*
+    ! ------------------ ! IDEAS DESECHADAS------------------------
+*/
+
 /* 
+    ! 1. Uso de selector de hijos, lo uso para seleccionar todo el contenedor de cada artista mostrado y poner un márgen de 15px para que tengan un espaciado entre cada uno, pues no se veía bien sin espaciado de margen.
+*/
+/* #main-container>div {
+    margin-bottom: 85px !important;
+} */
+
+/*
+    ! 2. Primer y ultimo hijo del indice tipo nav.
+        - Primer hijo con borde redondeado solo arriba
+        - Ultimo hijo con borde redondeado solo abajo
+*/
+
+/* .nav-pills a:first-of-type{
+    border-radius: 7px 7px  0  0 !important;
+}
+
+.nav-pills a:last-of-type{
+    border-radius: 0  0 7px 7px !important;
+} */
+
+/*
+    ! 3. Cuando el usuario pasaba su mouse sobre la imagen de portada del album del artista, salia un texto que decia "Haz click en la imagen para mas informacion"
+*/
+    
+/* 
+    Fragmento relacionado a mostrar el texto una vez que el cursor estaba encima de la imagen
+
 .composer-music .card-img-overlay{
     display: none;
 }
 #panic-at-the-disco .composer-music:hover img + div{
     display: block;
     color: whitesmoke;
+} */
+
+
+/*
+    Fragmento relacionado al diseño, asi como configuraciones para que el texto estuviera siempre en el centro de la imagen.
+
+.image-container{
+    position: relative;
+}
+.image-container:hover > .click-me-text{
+    display: block;
+}
+
+.click-me-text{
+
+    display: none;
+
+    position: absolute;
+
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+    font-size: 14.3px;
+
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+    background-color: whitesmoke;
+
+    border-radius: 5px;
+    padding: 10px;
+
+    text-align: center;
+
+    cursor: default;
 } */
