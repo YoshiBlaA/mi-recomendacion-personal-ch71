@@ -23,7 +23,8 @@ main {
     * - ACTUALIZACION> Se arreglo, cambiando div por man y main por div
 */
 .improvised-container {
-    padding: 20px;
+    padding: 20px 20px 0;
+    height: fit-content !important;
 }
 
 /* Barra lateral con el indice del contenido
@@ -36,7 +37,7 @@ main {
 .bd-sidebar {
     background-color: rgba(33, 37, 41, 1);
     position: sticky;
-    top: max(5%, 40px);
+    top: max(2%, 40px);
     overflow-y: auto;
     height: 100vh;
     padding-top: 15px;
@@ -100,6 +101,15 @@ hr {
         opacity 0.4s ease,
         filter 0.4s ease,
         color 0.4s ease;
+}
+
+footer{
+    background-color: rgba(33, 37, 41, 1);
+    color: whitesmoke;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: center;
 }
 
 /*
@@ -219,6 +229,7 @@ hr {
     background-color: whitesmoke;
     color: rgb(40, 41, 48);
 }
+
 
 /* * HOYO-MIX */
 /* #hoyo-mix .card-body {
