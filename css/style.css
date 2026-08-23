@@ -98,12 +98,6 @@ hr {
         color 0.4s ease;
 }
 
-#staticBackdrop-patd-
-#staticBackdrop-fob-
-#staticBackdrop-queen-
-#staticBackdrop-square-enix-
-#staticBackdrop-hoyo-mix-
-
 /*
     * -------------------------- INTERACCIONES USANDO PSEUDOCLASSES -------------------
 */
@@ -118,14 +112,20 @@ hr {
 
 /*
     TODO> Interaccion con la carta de musica para cada compositor
-    TODO> 1. #[compositor] .card-body --> transicion de color para cambiar al siguiente color.
+    TODO> 1. #composers-content .composer-music .card-body --> transicion de color para cambiar al siguiente color.
     TODO> 2. #[compositor] .card-body:hover, #[compositor] .composer-music a:hover + .card-body --> cambia el fondo del contenedor de texto de la tarjeta y hace el texto color blancoso.
+    TODO> 3. #[compositor] .card:hover a.btn --> cambia el color de fondo y de texto del botón de Spotify al tener el puntero sobre la card de música de un compositor.
+    TODO> 4. #[compositor] .card a.btn:hover --> cambia el color de fondo y de texto del botón de Spotify al tener el puntero sobre el botón de Spotify
 */
-#panic-at-the-disco .card-body {
+
+
+/* * PATD */
+#composers-content .composer-music .card-body {
     transition:
         background-color 0.4s ease,
         filter 0.4s ease,
         color 0.4s ease;
+        border-radius: 0 0 5px 5px;
 }
 
 #panic-at-the-disco .card-body:hover,
@@ -134,12 +134,24 @@ hr {
     color: whitesmoke;
 }
 
-#fall-out-boy .card-body {
+#panic-at-the-disco .card:hover a.btn{
+    background-color: rgba(18, 20, 24, 0.815);
+    color: whitesmoke;
+    border: rgba(18, 20, 24, 0.815) solid 1px;
+}
+
+#panic-at-the-disco .card a.btn:hover{
+    background-color: whitesmoke;
+    color: rgba(18, 20, 24, 0.815);
+}
+
+/* * FOB */
+/* #fall-out-boy .card-body {
     transition:
         background-color 0.4s ease,
         filter 0.4s ease,
         color 0.4s ease;
-}
+} */
 
 #fall-out-boy .card-body:hover,
 #fall-out-boy .composer-music a:hover + .card-body{
@@ -147,12 +159,24 @@ hr {
     color: whitesmoke;
 }
 
-#queen .card-body {
+#fall-out-boy .card:hover a.btn{
+    background-color: rgb(77, 18, 0);
+    color: whitesmoke;
+    border: rgb(77, 18, 0) solid 1px;
+}
+
+#fall-out-boy .card a.btn:hover{
+    background-color: whitesmoke;
+    color: rgb(77, 18, 0);
+}
+
+/* * QUEEN */
+/* #queen .card-body {
     transition:
         background-color 0.4s ease,
         filter 0.4s ease,
         color 0.4s ease;
-}
+} */
 
 #queen .card-body:hover,
 #queen .composer-music a:hover + .card-body{
@@ -160,12 +184,24 @@ hr {
     color: whitesmoke;
 }
 
-#square-enix .card-body {
+#queen .card:hover a.btn{
+    background-color: rgb(0, 77, 71);
+    color: whitesmoke;
+    border: rgb(0, 77, 71) solid 1px;
+}
+
+#queen .card a.btn:hover{
+    background-color: whitesmoke;
+    color: rgb(0, 77, 71);
+}
+
+/* * SQUARE-ENIX */
+/* #square-enix .card-body {
     transition:
         background-color 0.4s ease,
         filter 0.4s ease,
         color 0.4s ease;
-}
+} */
 
 #square-enix .card-body:hover,
 #square-enix .composer-music a:hover + .card-body{
@@ -173,12 +209,24 @@ hr {
     color: whitesmoke;
 }
 
-#hoyo-mix .card-body {
+#square-enix .card:hover a.btn{
+    background-color: rgb(81, 83, 99);
+    color: whitesmoke;
+    border: rgb(81, 83, 99) solid 1px;
+}
+
+#square-enix .card a.btn:hover{
+    background-color: whitesmoke;
+    color: rgb(81, 83, 99);
+}
+
+/* * HOYO-MIX */
+/* #hoyo-mix .card-body {
     transition:
         background-color 0.4s ease,
         filter 0.4s ease,
         color 0.4s ease;
-}
+} */
 
 #hoyo-mix .card-body:hover,
     #hoyo-mix .composer-music a:hover + .card-body{
@@ -186,7 +234,18 @@ hr {
     color: whitesmoke;
 }
 
-/* TODO> FIN DE AGRUPACION */
+#hoyo-mix .card:hover a.btn{
+    background-color: rgb(44, 72, 148);
+    color: whitesmoke;
+    border: rgb(44, 72, 148) solid 1px;
+}
+
+#hoyo-mix .card a.btn:hover{
+    background-color: whitesmoke;
+    color: rgb(44, 72, 148);
+}
+
+/* TODO> FIN DE INTERACCIONES AGRUPADAS POR COMPOSITOR */
 
 
 
