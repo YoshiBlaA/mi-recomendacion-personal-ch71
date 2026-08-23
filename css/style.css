@@ -34,6 +34,7 @@ main {
     - Uso overflow por si en algún momento a la página se le añade más contenido (e índices por consecuencia), salga una barra de desplazamiento aparte para este nav.
         */
 .bd-sidebar {
+    background-color: rgba(33, 37, 41, 1);
     position: sticky;
     top: max(5%, 40px);
     overflow-y: auto;
@@ -51,11 +52,13 @@ main {
 /* Al quitar el padding en la instrucción anterior, el texto se "desacomoda", por lo que pruebo manualmente distientas configuraciones SOLO para los enlaces, ya no para su contenedor nav
     - Opto por usar 5px de padding arriba / abajo, ya que el que tenian por defecto hacía que tuvieran mucho espacio vertical.
     - También uso 10px de padding izquierda / derecha.
+    - Se cambia el color de letra por whitesmoke
 */
 .nav-pills a,
 .nav-pills h4 {
     padding: 5px 10px !important;
     border-radius: 0 !important;
+    color: whitesmoke !important;
 }
 
 /*
@@ -63,12 +66,13 @@ main {
 */
 hr {
     margin: 0px 0 10px !important;
+    color: whitesmoke !important;
 }
 
 /*
     Afecta solo a los botones para Spotify, lo usé para dar espaciado entre los elementos svg y el texto, además de centrarlos verticalmente con align-items
 */
-.composer-music .card-text + a {
+.composer-music .card-text+a {
     width: fit-content;
 
     display: flex !important;
@@ -86,12 +90,12 @@ hr {
     justify-content: space-between;
 }
 
-.composer-music img:hover{
+.composer-music img:hover {
     opacity: 0.5;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
-.composer-music img{
+.composer-music img {
     transition:
         opacity 0.4s ease,
         filter 0.4s ease,
@@ -102,12 +106,9 @@ hr {
     * -------------------------- INTERACCIONES USANDO PSEUDOCLASSES -------------------
 */
 
-/*
-    Cambiar el color del botón de Spotify cuando el cursor está encima
-*/
-.composer-music .card-body a:hover {
-    background-color: whitesmoke;
-    color: green;
+.nav-pills a:hover{
+    font-weight: bold;
+    color: whitesmoke;
 }
 
 /*
@@ -118,29 +119,28 @@ hr {
     TODO> 4. #[compositor] .card a.btn:hover --> cambia el color de fondo y de texto del botón de Spotify al tener el puntero sobre el botón de Spotify
 */
 
-
 /* * PATD */
 #composers-content .composer-music .card-body {
     transition:
         background-color 0.4s ease,
         filter 0.4s ease,
         color 0.4s ease;
-        border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
 }
 
 #panic-at-the-disco .card-body:hover,
-#panic-at-the-disco .composer-music a:hover + .card-body{
+#panic-at-the-disco .composer-music a:hover+.card-body {
     background-color: rgba(18, 20, 24, 0.815);
     color: whitesmoke;
 }
 
-#panic-at-the-disco .card:hover a.btn{
+#panic-at-the-disco .card:hover a.btn {
     background-color: rgba(18, 20, 24, 0.815);
     color: whitesmoke;
     border: rgba(18, 20, 24, 0.815) solid 1px;
 }
 
-#panic-at-the-disco .card a.btn:hover{
+#panic-at-the-disco .card a.btn:hover {
     background-color: whitesmoke;
     color: rgba(18, 20, 24, 0.815);
 }
@@ -154,20 +154,20 @@ hr {
 } */
 
 #fall-out-boy .card-body:hover,
-#fall-out-boy .composer-music a:hover + .card-body{
+#fall-out-boy .composer-music a:hover+.card-body {
     background-color: rgb(77, 18, 0);
     color: whitesmoke;
 }
 
-#fall-out-boy .card:hover a.btn{
-    background-color: rgb(77, 18, 0);
+#fall-out-boy .card:hover a.btn {
+    background-color: rgb(117, 28, 1);
     color: whitesmoke;
-    border: rgb(77, 18, 0) solid 1px;
+    border: rgb(117, 28, 1) solid 1px;
 }
 
-#fall-out-boy .card a.btn:hover{
+#fall-out-boy .card a.btn:hover {
     background-color: whitesmoke;
-    color: rgb(77, 18, 0);
+    color: rgb(117, 28, 1);
 }
 
 /* * QUEEN */
@@ -179,18 +179,18 @@ hr {
 } */
 
 #queen .card-body:hover,
-#queen .composer-music a:hover + .card-body{
-    background-color: rgb(0, 77, 71);
+#queen .composer-music a:hover+.card-body {
+    background-color: rgb(15, 102, 95);
     color: whitesmoke;
 }
 
-#queen .card:hover a.btn{
+#queen .card:hover a.btn {
     background-color: rgb(0, 77, 71);
     color: whitesmoke;
     border: rgb(0, 77, 71) solid 1px;
 }
 
-#queen .card a.btn:hover{
+#queen .card a.btn:hover {
     background-color: whitesmoke;
     color: rgb(0, 77, 71);
 }
@@ -204,20 +204,20 @@ hr {
 } */
 
 #square-enix .card-body:hover,
-#square-enix .composer-music a:hover + .card-body{
+#square-enix .composer-music a:hover+.card-body {
     background-color: rgb(81, 83, 99);
     color: whitesmoke;
 }
 
-#square-enix .card:hover a.btn{
-    background-color: rgb(81, 83, 99);
+#square-enix .card:hover a.btn {
+    background-color: rgb(40, 41, 48);
     color: whitesmoke;
-    border: rgb(81, 83, 99) solid 1px;
+    border: rgb(40, 41, 48) solid 1px;
 }
 
-#square-enix .card a.btn:hover{
+#square-enix .card a.btn:hover {
     background-color: whitesmoke;
-    color: rgb(81, 83, 99);
+    color: rgb(40, 41, 48);
 }
 
 /* * HOYO-MIX */
@@ -229,25 +229,23 @@ hr {
 } */
 
 #hoyo-mix .card-body:hover,
-    #hoyo-mix .composer-music a:hover + .card-body{
+#hoyo-mix .composer-music a:hover+.card-body {
     background-color: rgb(44, 72, 148);
     color: whitesmoke;
 }
 
-#hoyo-mix .card:hover a.btn{
-    background-color: rgb(44, 72, 148);
+#hoyo-mix .card:hover a.btn {
+    background-color: rgb(20, 32, 66);
     color: whitesmoke;
-    border: rgb(44, 72, 148) solid 1px;
+    border: rgb(20, 32, 66) solid 1px;
 }
 
-#hoyo-mix .card a.btn:hover{
+#hoyo-mix .card a.btn:hover {
     background-color: whitesmoke;
-    color: rgb(44, 72, 148);
+    color: rgb(20, 32, 66);
 }
 
 /* TODO> FIN DE INTERACCIONES AGRUPADAS POR COMPOSITOR */
-
-
 
 /* * --------------------- MAS INTERACCIONES USANDO PSEUDOELEMENTOS ------------------ */
 
@@ -255,11 +253,11 @@ hr {
     Al seleccionar texto de la informacion de una cancion del artista, el texto se vuelve negro y el color de fondo de la seleccion se vuelve blancoso. 
 */
 .card-body::selection {
-  background-color: whitesmoke; /* Vibrant background */
-  color: black; /* White text */
+    background-color: whitesmoke;
+    /* Vibrant background */
+    color: black;
+    /* White text */
 }
-
-
 
 /* * -------------------------- MEDIA QUERIES -------------------------------- */
 
@@ -278,8 +276,6 @@ hr {
         grid-template-columns: 100%;
     }
 }
-
-
 
 /*
     ! ------------------ ! IDEAS DESECHADAS------------------------
@@ -309,7 +305,7 @@ hr {
 /*
     ! 3. Cuando el usuario pasaba su mouse sobre la imagen de portada del album del artista, salia un texto que decia "Haz click en la imagen para mas informacion"
 */
-    
+
 /* 
     Fragmento relacionado a mostrar el texto una vez que el cursor estaba encima de la imagen
 
@@ -320,7 +316,6 @@ hr {
     display: block;
     color: whitesmoke;
 } */
-
 
 /*
     Fragmento relacionado al diseño, asi como configuraciones para que el texto estuviera siempre en el centro de la imagen.
@@ -355,4 +350,12 @@ hr {
     text-align: center;
 
     cursor: default;
+} */
+
+/*
+    ! 4. Cambiar el color del botón de Spotify cuando el cursor está encima a fondo blanco, texto verde
+*/
+/* .composer-music .card-body a:hover {
+    background-color: whitesmoke;
+    color: green;
 } */
