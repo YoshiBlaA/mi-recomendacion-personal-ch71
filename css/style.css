@@ -18,6 +18,13 @@ main {
 }
 
 /* 
+    Texto del navbar
+*/
+.main-navbar a.navbar-brand::before {
+    content: "Mis recomendaciones musicales";
+}
+
+/* 
     Contenedor improvisado que engloba toda la etiqueta main. Sé que esto no debería hacerse, pero en el momento no se me ocurría otra forma de separar el nav principal del contenido en main (ya que no me funcionaba el sticky del nav de índices).
     - Planeo arreglarlo en un futuro (o tal vez no y se lo pida a la IA).
     * - ACTUALIZACION> Se arreglo, cambiando div por man y main por div
@@ -314,6 +321,10 @@ footer {
         height: 100% !important;
     }
 
+    /* Cambiar texto del navbar para pantallas pequennias y no se desborde el icono de cinta de opciones */
+    .main-navbar a.navbar-brand::before {
+        content: "Recomendaciones musicales";
+    }
 }
 
 /*
