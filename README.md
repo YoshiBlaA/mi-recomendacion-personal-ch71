@@ -23,6 +23,7 @@ Cada ficha / tarjeta de recomendación incluirá los siguientes datos:
 - **Diseño visual:** Canvas interactivos cuando el usuario selecciona la imagen del album.
 - **Acciones del usuario:**
   - Enlace o botón para escuchar/reproducir la canción (Spotify/YouTube).
+  - Botón de ayuda sobre cómo usar la página.
 
 ## Registro de prompts
 
@@ -36,4 +37,4 @@ Cada ficha / tarjeta de recomendación incluirá los siguientes datos:
 
 ## ¿Cuál fue el prompt más útil y por qué?
 
-**"Eres un experto en creación de páginas web de recomendaciones musicales. Ayúdame a mejorar / complementar estas respuestas", basado en la metodología PIENSO)"** porque no resolvió una duda puntual de sintaxis, sino que definió el rumbo de todo el proyecto: qué recomendar, para quién, qué datos mostrar por ficha y cómo podía ser la interacción. Al formular una pregunta a la vez, me obligó a tomar decisiones concretas antes de escribir una sola línea de código, así que todo lo que resolví después (HTML, Bootstrap, JS, CSS) ya tenía un objetivo claro detrás, en lugar de ir improvisando sobre la marcha, a excpeción de toma de decisión de cómo poner algunas etiquetas en el HTML que se puede ver en el CSS con una explicación.
+**"Eres un experto en creación de páginas web de recomendaciones musicales. Ayúdame a mejorar / complementar estas respuestas", basado en la metodología PIENSO)"** porque no resolvió una duda puntual de sintaxis, sino que definió el rumbo de todo el proyecto: qué recomendar, para quién, qué datos mostrar por ficha y cómo podía ser la interacción. Al formular una pregunta a la vez, me obligó a tomar decisiones concretas antes de escribir una sola línea de código, así el 90% de lo que resolví después (HTML, Bootstrap, JS, CSS) ya tenía un objetivo claro detrás, en lugar de ir improvisando sobre la marcha, a excpeción de toma de decisión de cómo poner algunas etiquetas en el HTML que se puede ver en el CSS con una explicación.
