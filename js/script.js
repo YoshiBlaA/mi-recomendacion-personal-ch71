@@ -1,5 +1,5 @@
-let nombre = prompt("Escribe tu nombre: ");
-let apellido = prompt("Escribe tu primer apellido");
+const nombre = prompt("Escribe tu nombre: ");
+const apellido = prompt("Escribe tu primer apellido");
 const noCancionesAgregadas = 20;
 const annioActual = 2026;
 const acceso = true;
