@@ -14,9 +14,10 @@
 <body>
 
     <!-- * NAVBAR DE BOOTSTRAP -->
-    <nav class="navbar bg-dark border-bottom border-body main-navbar sticky-top" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body sticky-top main-navbar" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -25,7 +26,12 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTop-help" aria-controls="offcanvasTop">Ayuda</button>
+
+
+
+
                     </li>
                 </ul>
             </div>
@@ -1052,6 +1058,33 @@
                 </div>
             </div>
 
+            <!-- TODO OFFCANVAS DE AYUDA -->
+
+            <div class="offcanvas offcanvas-top h-25" tabindex="-1" id="offcanvasTop-help"
+                aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasTopLabel">Guía rápida</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <h1> ¿Cómo usar la página? </h1>
+
+                    <ul>
+                        <li><strong>Índice lateral:</strong> en la barra izquierda encontrarás los nombres de los
+                            artistas y compositores. Haz clic en cualquiera para saltar directamente a su sección.</li>
+                        <li><strong>Tarjetas de canciones:</strong> cada artista tiene tarjetas con la portada, el
+                            álbum, la fecha de lanzamiento y la duración de la canción.</li>
+                        <li><strong>Más información:</strong> haz clic en la imagen de la portada para abrir un panel
+                            con detalles adicionales de la canción.</li>
+                        <li><strong>Escuchar en Spotify:</strong> usa el botón verde debajo de cada tarjeta para abrir
+                            la canción directamente en Spotify.</li>
+                        <li><strong>Pantallas pequeñas:</strong> si tu pantalla es angosta (menos de 1050px), el índice
+                            lateral se oculta automáticamente para dejar más espacio al contenido.</li>
+                    </ul>
+
+                </div>
+            </div>
 
     </main>
 

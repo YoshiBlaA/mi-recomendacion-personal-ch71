@@ -81,21 +81,33 @@ hr {
     align-items: center;
 }
 
+/* 
+    Situar el boton de Spotify hasta abajo, para que todos esten alineados igual.
+*/
 .composer-music .card-body a {
     margin-top: auto;
 }
 
+/* 
+    Disposicion flex en columna y que todos esten en su centro.
+*/
 .composer-music .card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+/* 
+    Al pasar el cursor sobre la imagen de la cancion, aparece un efecto como si se hiciera un poco blanca, ademas de que el cursor cambia a uno de tipo puntero / "hacer click" para que el usuario sepa que se dispara un evento o accion.
+*/
 .composer-music img:hover {
     opacity: 0.5;
     cursor: pointer;
 }
 
+/* 
+    Se fija una transicion para que el efecto de opacidad tenga retraso, tanto al pasar el cursor sobre la imagen como al dejarla.
+*/
 .composer-music img {
     transition:
         opacity 0.4s ease,
@@ -103,20 +115,30 @@ hr {
         color 0.4s ease;
 }
 
-footer{
-    background-color: rgba(33, 37, 41, 1);
+/* 
+    Estilo para el footer. Se hace un diplay flex y un justify para centrar el contenido del footer.
+*/
+footer {
+    background-color: rgba(33, 37, 41, 0.952);
     color: whitesmoke;
     padding: 20px;
-    
+
     display: flex;
     justify-content: center;
+}
+
+#offcanvasTop-help {
+    height: 300px !important;
 }
 
 /*
     * -------------------------- INTERACCIONES USANDO PSEUDOCLASSES -------------------
 */
 
-.nav-pills a:hover{
+/* 
+    Se cambia el color de texto por defecto, asi como hacerlos negritas cuando se pasa el puntero sobre las opciones del indice tipo navbar de la izquierda.
+*/
+.nav-pills a:hover {
     font-weight: bold;
     color: whitesmoke;
 }
@@ -124,12 +146,14 @@ footer{
 /*
     TODO> Interaccion con la carta de musica para cada compositor
     TODO> 1. #composers-content .composer-music .card-body --> transicion de color para cambiar al siguiente color.
+        * Antes se habia separado por compositor, pero me di cuenta de que se podia agrupar en una sola instruccion al repetirse el mismo patron.
+
     TODO> 2. #[compositor] .card-body:hover, #[compositor] .composer-music a:hover + .card-body --> cambia el fondo del contenedor de texto de la tarjeta y hace el texto color blancoso.
     TODO> 3. #[compositor] .card:hover a.btn --> cambia el color de fondo y de texto del botón de Spotify al tener el puntero sobre la card de música de un compositor.
     TODO> 4. #[compositor] .card a.btn:hover --> cambia el color de fondo y de texto del botón de Spotify al tener el puntero sobre el botón de Spotify
 */
 
-/* * PATD */
+
 #composers-content .composer-music .card-body {
     transition:
         background-color 0.4s ease,
@@ -138,6 +162,7 @@ footer{
     border-radius: 0 0 5px 5px;
 }
 
+/* * PATD */
 #panic-at-the-disco .card-body:hover,
 #panic-at-the-disco .composer-music a:hover+.card-body {
     background-color: rgba(18, 20, 24, 0.815);
@@ -286,6 +311,11 @@ footer{
         display: grid;
         grid-template-columns: 100%;
     }
+
+    #offcanvasTop-help {
+        height: 100% !important;
+    }
+
 }
 
 /*
