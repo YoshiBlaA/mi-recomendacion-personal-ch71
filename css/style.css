@@ -110,9 +110,7 @@ hr {
 */
 .composer-music img {
     transition:
-        opacity 0.4s ease,
-        filter 0.4s ease,
-        color 0.4s ease;
+        opacity 0.4s ease;
 }
 
 /* 
